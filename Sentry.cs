@@ -117,7 +117,6 @@ public class Sentry : MonoBehaviour {
     {
         float creationTime = time;
         GameObject bullet = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        bullet.tag = "bullet";
         bullet.AddComponent<Rigidbody>();
         bullet.transform.position = this.transform.position;
         bullet.transform.localScale = new Vector3(bulletScale, bulletScale, bulletScale);
